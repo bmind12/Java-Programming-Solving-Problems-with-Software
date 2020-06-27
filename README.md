@@ -1,2 +1,1 @@
-# Java-Programming-Solving-Problems-with-Software
-A repo dedicated to course Java Programming Course
+# [Java Programming: Solving Problems with Software](https://www.coursera.org/learn/java-programming/home/welcome)
