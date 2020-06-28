@@ -25,13 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad3bb0de-1ca4-4e82-b6ef-cf1e1153c0d2" name="Default Changelist" comment="adds hello world example">
-      <change afterPath="$PROJECT_DIR$/assets/perimeter/example1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/perimeter/example2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/course/perimeter/PerimeterRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/hello_unicode.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hello-world/hello_unicode.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/helloworld/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/course/helloworld/HelloWorld.java" afterDir="false" />
+    <list default="true" id="ad3bb0de-1ca4-4e82-b6ef-cf1e1153c0d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/course/perimeter/PerimeterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/course/perimeter/PerimeterRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593353031946</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adds second assignment with first task solved">
+      <created>1593364831241</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593364831241</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,17 +159,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adds hello world example" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds hello world example" />
+    <MESSAGE value="adds second assignment with first task solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds second assignment with first task solved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="204" y="-1019" key="#Project_Structure" timestamp="1593363571008">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="204" y="-1019" key="#Project_Structure/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363571008" />
-    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593364783466">
+    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593364831110">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593364783466" />
+    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593364831110" />
     <state width="962" height="442" key="Diff.GoToChangePopup" timestamp="1593364706274">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
@@ -224,10 +227,10 @@
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593353567320" />
-    <state x="316" y="-860" key="Vcs.Push.Dialog.v2" timestamp="1593364789055">
+    <state x="316" y="-860" key="Vcs.Push.Dialog.v2" timestamp="1593364841111">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="316" y="-860" key="Vcs.Push.Dialog.v2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593364789055" />
+    <state x="316" y="-860" key="Vcs.Push.Dialog.v2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593364841111" />
     <state x="423" y="-968" width="586" height="735" key="find.popup" timestamp="1593363842954">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
@@ -236,9 +239,9 @@
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="381" y="-314" key="run.anything.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593353149375" />
-    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup" timestamp="1593364643836">
+    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup" timestamp="1593364838373">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593364643836" />
+    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593364838373" />
   </component>
 </project>

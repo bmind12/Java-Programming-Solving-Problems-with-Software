@@ -27,6 +27,7 @@ public class PerimeterRunner {
         double length = getPerimeter(s);
         System.out.println("perimeter = " + length);
         System.out.println("number of points = " + getNumPoints(s));
+        System.out.println("avg length = " + getAverageLength(s));
     }
 
     public static void main (String[] args) {
@@ -42,5 +43,13 @@ public class PerimeterRunner {
         }
 
         return pointsCount;
+    }
+
+    private static double getAverageLength (Shape s) {
+        PerimeterRunner pr = new PerimeterRunner();
+        int pointsCount = getNumPoints(s);
+        double perimeter = pr.getPerimeter(s);
+
+        return perimeter / pointsCount;
     }
 }
