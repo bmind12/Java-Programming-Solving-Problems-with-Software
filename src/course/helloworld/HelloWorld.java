@@ -1,4 +1,4 @@
-package com.example.helloworld;
+package course.helloworld;
 
 import edu.duke.*;
 
