@@ -26,12 +26,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad3bb0de-1ca4-4e82-b6ef-cf1e1153c0d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java-Programming-Solving-Problems-with-Software.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/hello-world/hello_unicode.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-01-hello-world/hello_unicode.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/perimeter/example1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/02-01-perimeter-runner/example1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/perimeter/example2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/02-01-perimeter-runner/example2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/course/helloworld/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/course/helloworld/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/course/perimeter/PerimeterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/course/perimeter/PerimeterRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/course/perimeter/PerimeterAssignmentRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/course/perimeter/PerimeterAssignmentRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,29 +61,44 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/02-02-perimeter-assignment" />
       <recent name="$PROJECT_DIR$/assets/perimeter" />
       <recent name="$PROJECT_DIR$/assets/hello-world" />
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HelloWorld">
+  <component name="RunManager" selected="Application.PerimeterAssignmentRunner">
     <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="course.helloworld.HelloWorld" />
       <module name="Java-Programming-Solving-Problems-with-Software" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="course.helloworld.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PerimeterAssignmentRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.perimeter.PerimeterAssignmentRunner" />
+      <module name="Java-Programming-Solving-Problems-with-Software" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="course.perimeter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,6 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PerimeterAssignmentRunner" />
         <item itemvalue="Application.HelloWorld" />
         <item itemvalue="Application.PerimeterRunner" />
       </list>
@@ -157,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593395915352</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="restructures assets">
+      <created>1593396243032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593396243032</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adds PerimeterAssignmentRunner assignment data">
+      <created>1593396509428</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1593396509428</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +212,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adds hello world example" />
@@ -189,18 +220,20 @@
     <MESSAGE value="implements getAverageLength method" />
     <MESSAGE value="implements getLargestSide method" />
     <MESSAGE value="implements getLargestX method" />
-    <option name="LAST_COMMIT_MESSAGE" value="implements getLargestX method" />
+    <MESSAGE value="restructures assets" />
+    <MESSAGE value="adds PerimeterAssignmentRunner assignment data" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds PerimeterAssignmentRunner assignment data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="204" y="-1019" key="#Project_Structure" timestamp="1593363571008">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="204" y="-1019" key="#Project_Structure/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363571008" />
-    <state x="69" y="51" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593395915249">
+    <state x="65" y="51" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593396509319">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365200365" />
-    <state x="69" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1593395915249" />
+    <state x="65" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1593396509319" />
     <state width="962" height="442" key="Diff.GoToChangePopup" timestamp="1593364706274">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
@@ -209,58 +242,59 @@
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="-144" y="-1100" width="1720" height="1000" key="DiffContextDialog/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593364747531" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1593396193261">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1593397011901">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="424" key="GridCell.Tab.0.bottom/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365146432" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593396193261" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593397011901" />
     <state width="1878" height="424" key="GridCell.Tab.0.bottom/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764028" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1593396193260">
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1593397011901">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="424" key="GridCell.Tab.0.center/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365146430" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593396193260" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593397011901" />
     <state width="1878" height="424" key="GridCell.Tab.0.center/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764026" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1593396193259">
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1593397011900">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="424" key="GridCell.Tab.0.left/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365146429" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593396193259" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593397011900" />
     <state width="1878" height="424" key="GridCell.Tab.0.left/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764024" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1593396193260">
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1593397011901">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="424" key="GridCell.Tab.0.right/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365146431" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593396193260" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593397011901" />
     <state width="1878" height="424" key="GridCell.Tab.0.right/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764027" />
-    <state width="1398" height="250" key="GridCell.Tab.1.bottom" timestamp="1593395346983">
+    <state width="1398" height="250" key="GridCell.Tab.1.bottom" timestamp="1593397011898">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="424" key="GridCell.Tab.1.bottom/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365146330" />
-    <state width="1398" height="250" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593395346983" />
+    <state width="1398" height="250" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593397011898" />
     <state width="1878" height="424" key="GridCell.Tab.1.bottom/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764032" />
-    <state width="1398" height="250" key="GridCell.Tab.1.center" timestamp="1593395346981">
+    <state width="1398" height="250" key="GridCell.Tab.1.center" timestamp="1593397011897">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="424" key="GridCell.Tab.1.center/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365146328" />
-    <state width="1398" height="250" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1593395346981" />
+    <state width="1398" height="250" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1593397011897" />
     <state width="1878" height="424" key="GridCell.Tab.1.center/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764030" />
-    <state width="1398" height="250" key="GridCell.Tab.1.left" timestamp="1593395346980">
+    <state width="1398" height="250" key="GridCell.Tab.1.left" timestamp="1593397011897">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="424" key="GridCell.Tab.1.left/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365146328" />
-    <state width="1398" height="250" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1593395346980" />
+    <state width="1398" height="250" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1593397011897" />
     <state width="1878" height="424" key="GridCell.Tab.1.left/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764029" />
-    <state width="1398" height="250" key="GridCell.Tab.1.right" timestamp="1593395346982">
+    <state width="1398" height="250" key="GridCell.Tab.1.right" timestamp="1593397011898">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1878" height="424" key="GridCell.Tab.1.right/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365146329" />
-    <state width="1398" height="250" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1593395346982" />
+    <state width="1398" height="250" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1593397011898" />
     <state width="1878" height="424" key="GridCell.Tab.1.right/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764030" />
-    <state x="225" y="-961" key="SettingsEditor" timestamp="1593353305168">
-      <screen x="-244" y="-1200" width="1920" height="1200" />
+    <state x="352" y="178" key="SettingsEditor" timestamp="1593396474129">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="225" y="-961" key="SettingsEditor/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593353305168" />
+    <state x="352" y="178" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1593396474129" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1593353567320">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
@@ -269,24 +303,24 @@
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="569" y="-679" key="VCS.ChangelistChooser/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365174393" />
-    <state x="420" y="255" key="Vcs.Push.Dialog.v2" timestamp="1593395930003">
+    <state x="420" y="255" key="Vcs.Push.Dialog.v2" timestamp="1593396516073">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="316" y="-860" key="Vcs.Push.Dialog.v2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365213448" />
-    <state x="420" y="255" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593395930003" />
-    <state x="500" y="174" width="574" height="552" key="find.popup" timestamp="1593396202046">
+    <state x="420" y="255" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593396516073" />
+    <state x="500" y="174" width="574" height="552" key="find.popup" timestamp="1593396426604">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="423" y="-968" width="586" height="735" key="find.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363842954" />
-    <state x="500" y="174" width="574" height="552" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1593396202046" />
+    <state x="500" y="174" width="574" height="552" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1593396426604" />
     <state x="381" y="-314" key="run.anything.popup" timestamp="1593353149375">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="381" y="-314" key="run.anything.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593353149375" />
-    <state x="469" y="203" width="670" height="507" key="search.everywhere.popup" timestamp="1593395923448">
+    <state x="469" y="203" width="670" height="507" key="search.everywhere.popup" timestamp="1593396503122">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365211464" />
-    <state x="469" y="203" width="670" height="507" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593395923448" />
+    <state x="469" y="203" width="670" height="507" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593396503122" />
   </component>
 </project>
