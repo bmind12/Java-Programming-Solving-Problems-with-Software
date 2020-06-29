@@ -22,7 +22,7 @@ public class PerimeterRunner {
     }
 
     public void testPerimeter () {
-        FileResource fr = new FileResource("./assets/perimeter/example2.txt");
+        FileResource fr = new FileResource("./assets/02-01-perimeter-runner/example2.txt");
         Shape s = new Shape(fr);
         double length = getPerimeter(s);
         System.out.println("perimeter = " + length);
