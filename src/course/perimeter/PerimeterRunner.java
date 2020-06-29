@@ -28,6 +28,7 @@ public class PerimeterRunner {
         System.out.println("perimeter = " + length);
         System.out.println("number of points = " + getNumPoints(s));
         System.out.println("avg length = " + getAverageLength(s));
+        System.out.println("largest side = " + getLargestSide(s));
     }
 
     public static void main (String[] args) {
@@ -51,5 +52,22 @@ public class PerimeterRunner {
         double perimeter = pr.getPerimeter(s);
 
         return perimeter / pointsCount;
+    }
+
+    private static double getLargestSide (Shape s) {
+        double largestSide = 0;
+        Point lastPoint = s.getLastPoint();
+
+        for (Point point : s.getPoints()) {
+            double size = point.distance(lastPoint);
+
+            if (size > largestSide) {
+                largestSide = size;
+            }
+
+            lastPoint = point;
+        }
+
+        return largestSide;
     }
 }
