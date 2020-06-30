@@ -75,7 +75,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PerimeterAssignmentRunner">
+  <component name="RunManager" selected="Application.TagFinder">
     <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="course.helloworld.HelloWorld" />
       <module name="Java-Programming-Solving-Problems-with-Software" />
@@ -115,8 +115,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TagFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.tagfinder.TagFinder" />
+      <module name="Java-Programming-Solving-Problems-with-Software" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="course.tagfinder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TagFinder" />
         <item itemvalue="Application.PerimeterAssignmentRunner" />
         <item itemvalue="Application.HelloWorld" />
         <item itemvalue="Application.PerimeterRunner" />
@@ -218,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593495442554</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="implements findSimpleGene method">
+      <created>1593496259242</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1593496259242</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,17 +278,18 @@
     <MESSAGE value="completes PerimeterAssignmentRunner for quiz" />
     <MESSAGE value="restructures assets" />
     <MESSAGE value="adds TagFinder assignment boilerplate" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds TagFinder assignment boilerplate" />
+    <MESSAGE value="implements findSimpleGene method" />
+    <option name="LAST_COMMIT_MESSAGE" value="implements findSimpleGene method" />
   </component>
   <component name="WindowStateProjectService">
     <state x="204" y="-1019" key="#Project_Structure" timestamp="1593363571008">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="204" y="-1019" key="#Project_Structure/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363571008" />
-    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593495442455">
+    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593496259145">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593495442455" />
+    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593496259145" />
     <state x="65" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1593397618942" />
     <state width="962" height="442" key="Diff.GoToChangePopup" timestamp="1593364706274">
       <screen x="-244" y="-1200" width="1920" height="1200" />
@@ -353,10 +375,10 @@
     </state>
     <state x="381" y="-314" key="run.anything.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593495202013" />
     <state x="381" y="-314" key="run.anything.popup/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1593485243550" />
-    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup" timestamp="1593496194527">
+    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup" timestamp="1593496241089">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593496194527" />
+    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593496241089" />
     <state x="469" y="203" width="670" height="507" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593397601108" />
   </component>
 </project>

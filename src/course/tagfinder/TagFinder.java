@@ -23,6 +23,10 @@ public class TagFinder {
         }
     }
 
+    public static void main(String[] args) {
+        testSimpleGene();
+    }
+
     public void testing() {
         String a = "cccatggggtttaaataataataggagagagagagagagttt";
         String ap = "atggggtttaaataataatag";
@@ -41,7 +45,7 @@ public class TagFinder {
         }
     }
 
-    private String findSimpleGene(String dna) {
+    private static String findSimpleGene(String dna) {
         int startCodon = dna.indexOf("ATG");
         String result = "";
 
@@ -58,5 +62,19 @@ public class TagFinder {
         };
 
         return result;
+    }
+
+    private static void testSimpleGene() {
+        String[] dnas = {
+                "TAAGATAGTA",
+                "TAGATGGATAGTA",
+                "ATGTGTATTAAGTGTTAGTTAGTTATGTGTA",
+                "TGAGTGATGGAGTAGTTATAAGTATTGATGTA",
+                "TGAGTGATGGAGTAGTTTATAAGTATTGATGTA",
+        };
+
+        for (String dna : dnas) {
+            System.out.println("dna: " + findSimpleGene(dna));
+        }
     }
 }
