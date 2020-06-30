@@ -26,20 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad3bb0de-1ca4-4e82-b6ef-cf1e1153c0d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/course/tagfinder/TagFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-01-perimeter-runner/example1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-02-perimeter-runner/example1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-01-perimeter-runner/example2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-02-perimeter-runner/example2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-02-perimeter-assignment/datatest1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-03-perimeter-assignment/datatest1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-02-perimeter-assignment/datatest2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-03-perimeter-assignment/datatest2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-02-perimeter-assignment/datatest3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-03-perimeter-assignment/datatest3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-02-perimeter-assignment/datatest4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-03-perimeter-assignment/datatest4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-02-perimeter-assignment/datatest5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-03-perimeter-assignment/datatest5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-02-perimeter-assignment/datatest6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-03-perimeter-assignment/datatest6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-02-perimeter-assignment/example1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-03-perimeter-assignment/example1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-02-perimeter-assignment/example2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-03-perimeter-assignment/example2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-02-perimeter-assignment/example3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-03-perimeter-assignment/example3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/02-02-perimeter-assignment/example4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/01-03-perimeter-assignment/example4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/course/tagfinder/TagFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/course/tagfinder/TagFinder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +204,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593401443904</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="restructures assets">
+      <created>1593495409812</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1593495409812</updated>
+    </task>
+    <task id="LOCAL-00012" summary="adds TagFinder assignment boilerplate">
+      <created>1593495442554</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1593495442554</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,22 +251,23 @@
     <MESSAGE value="implements getAverageLength method" />
     <MESSAGE value="implements getLargestSide method" />
     <MESSAGE value="implements getLargestX method" />
-    <MESSAGE value="restructures assets" />
     <MESSAGE value="adds PerimeterAssignmentRunner assignment data" />
     <MESSAGE value="implements getLargestPerimeterMultipleFiles method" />
     <MESSAGE value="implements getFileWithLargestPerimeter method" />
     <MESSAGE value="completes PerimeterAssignmentRunner for quiz" />
-    <option name="LAST_COMMIT_MESSAGE" value="completes PerimeterAssignmentRunner for quiz" />
+    <MESSAGE value="restructures assets" />
+    <MESSAGE value="adds TagFinder assignment boilerplate" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds TagFinder assignment boilerplate" />
   </component>
   <component name="WindowStateProjectService">
     <state x="204" y="-1019" key="#Project_Structure" timestamp="1593363571008">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="204" y="-1019" key="#Project_Structure/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363571008" />
-    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593401443808">
+    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593495442455">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593401443808" />
+    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593495442455" />
     <state x="65" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1593397618942" />
     <state width="962" height="442" key="Diff.GoToChangePopup" timestamp="1593364706274">
       <screen x="-244" y="-1200" width="1920" height="1200" />
@@ -350,10 +353,10 @@
     </state>
     <state x="381" y="-314" key="run.anything.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593495202013" />
     <state x="381" y="-314" key="run.anything.popup/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1593485243550" />
-    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup" timestamp="1593401424700">
+    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup" timestamp="1593496194527">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593401424700" />
+    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593496194527" />
     <state x="469" y="203" width="670" height="507" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593397601108" />
   </component>
 </project>

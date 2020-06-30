@@ -40,4 +40,23 @@ public class TagFinder {
             System.out.println("not: " + ap);
         }
     }
+
+    private String findSimpleGene(String dna) {
+        int startCodon = dna.indexOf("ATG");
+        String result = "";
+
+        if (startCodon == -1) return result;
+
+        int stopCodon = dna.indexOf("TAA", startCodon + 3);
+
+        if (stopCodon == -1) return result;
+
+        String gene = dna.substring(startCodon, stopCodon + 3);
+
+        if (gene.length() % 3 == 0) {
+            result = gene;
+        };
+
+        return result;
+    }
 }
