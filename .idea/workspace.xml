@@ -26,7 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad3bb0de-1ca4-4e82-b6ef-cf1e1153c0d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/course/tagfinder/TagFinder2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/course/tagfinder/TagFinder3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -260,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593496776491</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="implements modified TagFinder">
+      <created>1593577021976</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1593577021976</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -301,17 +308,18 @@
     <MESSAGE value="adds TagFinder assignment boilerplate" />
     <MESSAGE value="implements findSimpleGene method" />
     <MESSAGE value="implement testSimpleGene method" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement testSimpleGene method" />
+    <MESSAGE value="implements modified TagFinder" />
+    <option name="LAST_COMMIT_MESSAGE" value="implements modified TagFinder" />
   </component>
   <component name="WindowStateProjectService">
     <state x="204" y="-1019" key="#Project_Structure" timestamp="1593363571008">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="204" y="-1019" key="#Project_Structure/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363571008" />
-    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593496776385">
+    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593577021849">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593496776385" />
+    <state x="80" y="-1006" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593577021849" />
     <state x="65" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1593397618942" />
     <state width="962" height="442" key="Diff.GoToChangePopup" timestamp="1593364706274">
       <screen x="-244" y="-1200" width="1920" height="1200" />
@@ -382,25 +390,25 @@
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="569" y="-679" key="VCS.ChangelistChooser/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365174393" />
-    <state x="316" y="-860" key="Vcs.Push.Dialog.v2" timestamp="1593575824272">
+    <state x="316" y="-860" key="Vcs.Push.Dialog.v2" timestamp="1593577026129">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="316" y="-860" key="Vcs.Push.Dialog.v2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593575824272" />
+    <state x="316" y="-860" key="Vcs.Push.Dialog.v2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593577026129" />
     <state x="420" y="255" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593396516073" />
-    <state x="423" y="-968" width="586" height="735" key="find.popup" timestamp="1593401149173">
+    <state x="423" y="-968" width="586" height="735" key="find.popup" timestamp="1593577361308">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="423" y="-968" width="586" height="735" key="find.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593401149173" />
+    <state x="423" y="-968" width="586" height="735" key="find.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593577361308" />
     <state x="500" y="174" width="574" height="552" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1593396426604" />
     <state x="381" y="-314" key="run.anything.popup" timestamp="1593495202013">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="381" y="-314" key="run.anything.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593495202013" />
     <state x="381" y="-314" key="run.anything.popup/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1593485243550" />
-    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup" timestamp="1593496821860">
+    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup" timestamp="1593577004599">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593496821860" />
+    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593577004599" />
     <state x="469" y="203" width="670" height="507" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593397601108" />
   </component>
 </project>
