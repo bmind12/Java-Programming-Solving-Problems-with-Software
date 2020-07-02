@@ -15,7 +15,7 @@ public class TagFinder4 {
 
             if (youtubeStartsAt == -1) continue;
 
-            int linkStartsAt = word.indexOf("\"");
+            int linkStartsAt = word.lastIndexOf("\"", youtubeStartsAt);
             int linkEndsAt = word.indexOf("\"", youtubeStartsAt);
 
             System.out.println(word.substring(linkStartsAt + 1, linkEndsAt));

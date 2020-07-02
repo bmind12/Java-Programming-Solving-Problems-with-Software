@@ -29,11 +29,7 @@ public class TagFinder2 {
 
     private static void testSimpleGene() {
         String[] dnas = {
-                "TAAGATAGTA",
-                "TAGATGGATAGTA",
-                "ATGTGTATTAAGTGTTAGTTAGTTATGTGTA",
-                "TGAGTGATGGAGTAGTTATAAGTATTGATGTA",
-                "TGAGTGATGGAGTAGTTTATAAGTATTGATGTA",
+                "AAATGCCCTAACTAGATTAAGAAACC",
         };
 
         for (String dna : dnas) {
