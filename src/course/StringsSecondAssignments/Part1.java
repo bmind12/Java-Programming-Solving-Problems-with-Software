@@ -2,7 +2,7 @@ package course.StringsSecondAssignments;
 
 public class Part1 {
     public static void main(String[] args) {
-        testFindStopCodon();
+        testFindGene();
     }
 
     private static int findStopCodon(String dna, int startIndex, String stopCodon) {
@@ -24,8 +24,8 @@ public class Part1 {
         int tgaIndex = findStopCodon(dna, startIndex + 3, "TGA");
         int minIndex = taaIndex;
 
-        if (minIndex > tagIndex || minIndex == -1) minIndex = tagIndex;
-        if (minIndex > tgaIndex || minIndex == -1) minIndex = tgaIndex;
+        if (minIndex == -1 && minIndex < tagIndex) minIndex = tagIndex;
+        if (minIndex == -1 && minIndex < tgaIndex) minIndex = tgaIndex;
 
         if (startIndex == -1 || minIndex == -1) return "";
 
@@ -44,5 +44,17 @@ public class Part1 {
         int test5 = findStopCodon("ATGTAATAA", 7, "TAA");
         System.out.println(test5);
     }
-}
 
+    private static void testFindGene() {
+        String test1 = findGene("ATTTAA");
+        System.out.println(test1);
+        String test2 = findGene("ATGTAG");
+        System.out.println(test2);
+        String test3 = findGene("ATGTTTTAGAATAG");
+        System.out.println(test3);
+        String test4 = findGene("ATGTTAATAG");
+        System.out.println(test4);
+        String test5 = findGene("TAATAGATGTTTTGATAATAG");
+        System.out.println(test5);
+    }
+}
