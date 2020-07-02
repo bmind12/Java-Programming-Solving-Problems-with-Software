@@ -14,7 +14,22 @@ public class Part1 {
             currIndex = dna.indexOf(stopCodon, currIndex + 1);
         }
 
-        return dna.length();
+        return currIndex;
+    }
+
+    private static String findGene(String dna) {
+        int startIndex = dna.indexOf("ATG");
+        int taaIndex = findStopCodon(dna, startIndex + 3, "TAA");
+        int tagIndex = findStopCodon(dna, startIndex + 3, "TAG");
+        int tgaIndex = findStopCodon(dna, startIndex + 3, "TGA");
+        int minIndex = taaIndex;
+
+        if (minIndex > tagIndex || minIndex == -1) minIndex = tagIndex;
+        if (minIndex > tgaIndex || minIndex == -1) minIndex = tgaIndex;
+
+        if (startIndex == -1 || minIndex == -1) return "";
+
+        return dna.substring(startIndex, minIndex + 3);
     }
 
     private static void testFindStopCodon() {
@@ -30,3 +45,4 @@ public class Part1 {
         System.out.println(test5);
     }
 }
+
