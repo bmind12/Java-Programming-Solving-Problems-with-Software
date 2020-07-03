@@ -26,8 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad3bb0de-1ca4-4e82-b6ef-cf1e1153c0d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/course/StringsSecondAssignments/Part2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/course/StringsSecondAssignments/Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/course/StringsSecondAssignments/Part1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <recent name="$PROJECT_DIR$/assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Part1">
+  <component name="RunManager" selected="Application.Part2">
     <configuration name="Part1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="course.StringsSecondAssignments.Part1" />
       <module name="Java-Programming-Solving-Problems-with-Software" />
@@ -89,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TagFinder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="course.tagfinder.TagFinder" />
+    <configuration name="Part2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="course.StringsSecondAssignments.Part2" />
       <module name="Java-Programming-Solving-Problems-with-Software" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="course.tagfinder.*" />
+          <option name="PATTERN" value="course.StringsSecondAssignments.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Part2" />
         <item itemvalue="Application.Part1" />
         <item itemvalue="Application.TagFinder4" />
         <item itemvalue="Application.TagFinder2" />
         <item itemvalue="Application.TagFinder3" />
-        <item itemvalue="Application.TagFinder" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593668620251</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="implements printAllGenes method">
+      <created>1593754230765</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1593754230765</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -373,17 +380,18 @@
     <MESSAGE value="implements Testing method" />
     <MESSAGE value="implements findGene method" />
     <MESSAGE value="adds another Testing method" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds another Testing method" />
+    <MESSAGE value="implements printAllGenes method" />
+    <option name="LAST_COMMIT_MESSAGE" value="implements printAllGenes method" />
   </component>
   <component name="WindowStateProjectService">
     <state x="204" y="-1019" key="#Project_Structure" timestamp="1593363571008">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="204" y="-1019" key="#Project_Structure/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363571008" />
-    <state x="170" y="-891" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593668620160">
+    <state x="170" y="-891" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1593754230657">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="170" y="-891" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593668620160" />
+    <state x="170" y="-891" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593754230657" />
     <state x="65" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1593397618942" />
     <state width="962" height="442" key="Diff.GoToChangePopup" timestamp="1593364706274">
       <screen x="-244" y="-1200" width="1920" height="1200" />
@@ -462,10 +470,10 @@
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="569" y="-679" key="VCS.ChangelistChooser/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365174393" />
-    <state x="316" y="-860" key="Vcs.Push.Dialog.v2" timestamp="1593670312237">
+    <state x="316" y="-860" key="Vcs.Push.Dialog.v2" timestamp="1593754233191">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="316" y="-860" key="Vcs.Push.Dialog.v2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593670312237" />
+    <state x="316" y="-860" key="Vcs.Push.Dialog.v2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593754233191" />
     <state x="420" y="255" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593396516073" />
     <state x="423" y="-968" width="628" height="735" key="find.popup" timestamp="1593584295187">
       <screen x="-244" y="-1200" width="1920" height="1200" />
