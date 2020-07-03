@@ -2,14 +2,14 @@ package course.StringsSecondAssignments;
 
 public class Part1 {
     public static void main(String[] args) {
-        testFindGene();
+        testPrintAllGenes();
     }
 
     private static int findStopCodon(String dna, int startIndex, String stopCodon) {
         int currIndex = dna.indexOf(stopCodon, startIndex);
 
         while (currIndex != -1) {
-            if (currIndex % 3 == 0) return currIndex;
+            if ((currIndex - startIndex) % 3 == 0) return currIndex;
 
             currIndex = dna.indexOf(stopCodon, currIndex + 1);
         }
@@ -24,12 +24,26 @@ public class Part1 {
         int tgaIndex = findStopCodon(dna, startIndex + 3, "TGA");
         int minIndex = taaIndex;
 
-        if (minIndex == -1 && minIndex < tagIndex) minIndex = tagIndex;
-        if (minIndex == -1 && minIndex < tgaIndex) minIndex = tgaIndex;
+        if (minIndex == -1 || (minIndex > tagIndex && tagIndex != -1)) minIndex = tagIndex;
+        if (minIndex == -1 || (minIndex > tgaIndex && tgaIndex != -1)) minIndex = tgaIndex;
 
         if (startIndex == -1 || minIndex == -1) return "";
 
         return dna.substring(startIndex, minIndex + 3);
+    }
+
+    private static void printAllGenes(String dna) {
+        int startIndex = 0;
+
+        while (true) {
+            String currGene = findGene(dna.substring(startIndex));
+
+            if (currGene.equals("")) break;
+
+            System.out.println(currGene);
+
+            startIndex = dna.indexOf(currGene, startIndex) + currGene.length();
+        }
     }
 
     private static void testFindStopCodon() {
@@ -56,5 +70,9 @@ public class Part1 {
         System.out.println(test4);
         String test5 = findGene("TAATAGATGTTTTGATAATAG");
         System.out.println(test5);
+    }
+
+    private static void testPrintAllGenes() {
+        printAllGenes("ATGTGAAAATTTAAATGTAGATGTTTTAATAGTAATAGATGTTTTGATAATAGTAGATGTTTTTTTTTAAATGTGA");
     }
 }
