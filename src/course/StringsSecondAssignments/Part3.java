@@ -1,8 +1,8 @@
 package course.StringsSecondAssignments;
 
-public class Part1 {
+public class Part3 {
     public static void main(String[] args) {
-        testPrintAllGenes();
+        testCountGenes();
     }
 
     private static int findStopCodon(String dna, int startIndex, String stopCodon) {
@@ -46,33 +46,38 @@ public class Part1 {
         }
     }
 
-    private static void testFindStopCodon() {
-        int test1 = findStopCodon("ATGTAA", 3, "TAA");
-        System.out.println(test1);
-        int test2 = findStopCodon("ATGTTAATAA", 0, "TAA");
-        System.out.println(test2);
-        int test3 = findStopCodon("ATGTAATAA", 2, "TAA");
-        System.out.println(test3);
-        int test4 = findStopCodon("ATGTAATAA", 5, "TAA");
-        System.out.println(test4);
-        int test5 = findStopCodon("ATGTAATAA", 7, "TAA");
-        System.out.println(test5);
+    private static int countGenes(String dna) {
+        int count = 0;
+        int startIndex = 0;
+
+        while (true) {
+            String currGene = findGene(dna.substring(startIndex));
+
+            if (currGene.equals("")) break;
+
+            startIndex = dna.indexOf(currGene, startIndex) + currGene.length();
+            count++;
+        }
+
+        return count;
     }
 
-    private static void testFindGene() {
-        String test1 = findGene("ATTTAA");
-        System.out.println(test1);
-        String test2 = findGene("ATGTAG");
-        System.out.println(test2);
-        String test3 = findGene("ATGTTTTAGAATAG");
-        System.out.println(test3);
-        String test4 = findGene("ATGTTAATAG");
-        System.out.println(test4);
-        String test5 = findGene("TAATAGATGTTTTGATAATAG");
-        System.out.println(test5);
-    }
-
-    private static void testPrintAllGenes() {
-        printAllGenes("ATGTGAAAATTTAAATGTAGATGTTTTAATAGTAATAGATGTTTTGATAATAGTAGATGTTTTTTTTTAAATGTGA");
+    private static void testCountGenes() {
+        int test1 = countGenes("ATGTAAGATGCCCTAGT");
+        System.out.println("test1: " + test1);
+        int test2 = countGenes("ATGTAG");
+        System.out.println("test2: " + test2);
+        int test3 = countGenes("ATGTTTTAGAATAG");
+        System.out.println("test3: " + test3);
+        int test4 = countGenes("ATGTTAATAG");
+        System.out.println("test4: " + test4);
+        int test5 = countGenes("TAATAGATGTTTTGATAATAG");
+        System.out.println("test5: " + test5);
+        int test6 = countGenes("ATTTAA");
+        System.out.println("test6: " + test6);
+        int test7 = countGenes("ATGTGAAAATTTAAATGTAGATGTTTTAATAGTAATAGATGTTTTGATAATAGTAGATGTTTTTTTTTAAATGTGA");
+        System.out.println("test7: " + test7);
+        int test8 = countGenes("ATGTTAG");
+        System.out.println("test8: " + test8);
     }
 }
