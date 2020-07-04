@@ -100,8 +100,8 @@ public class Part21 {
     private static float cgRatio(String dna) {
         float cgCount = 0;
 
-        for (char c : dna.toCharArray()) {
-            if (c == 'C' || c == 'G') cgCount++;
+        for (char c : dna.toLowerCase().toCharArray()) {
+            if (c == 'c' || c == 'g') cgCount++;
         }
 
         return cgCount / dna.length();
@@ -124,16 +124,17 @@ public class Part21 {
     }
 
     private static void processGenes(StorageResource sr) {
-        int longerThan9StringsCount = 0;
+        int longerThanThresholdStringsCount = 0;
         int cdRatioHigherThan35 = 0;
         int longestGeneLength = 0;
+        int threshold = 60;
 
         for (String str : sr.data()) {
             int length = str.length();
 
-            if (length > 9) {
+            if (length > threshold) {
                 System.out.println(str);
-                longerThan9StringsCount++;
+                longerThanThresholdStringsCount++;
             }
 
             if (cgRatio(str) > 0.35) {
@@ -146,23 +147,16 @@ public class Part21 {
             }
         }
 
-        System.out.println(longerThan9StringsCount);
+        System.out.println(longerThanThresholdStringsCount);
         System.out.println(cdRatioHigherThan35);
         System.out.println(longestGeneLength);
     }
 
     private static void testProcessGenes() {
+        FileResource fr = new FileResource("./assets/02-03-dna/brca1line.fa");
+        String dna = fr.asString();
         StorageResource sr1 = new StorageResource();
-        sr1.add("ATGTTTTTTTAA"); // Longer than 9
+        sr1.add(dna); // Longer than 9
         processGenes(sr1);
-        StorageResource sr2 = new StorageResource();
-        sr2.add("ATGTAA"); // Smaller than 9
-        processGenes(sr2);
-        StorageResource sr3 = new StorageResource();
-        sr3.add("ATGGGGGGGTAA"); // Higher CG ratio
-        processGenes(sr3);
-        StorageResource sr4 = new StorageResource();
-        sr4.add("ATGTTTTAA"); // Lower CG ratio
-        processGenes(sr4);
     }
 }
