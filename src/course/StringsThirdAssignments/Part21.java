@@ -1,6 +1,6 @@
-package course.StringsSecondAssignments;
+package course.StringsThirdAssignments;
 
-public class Part1 {
+public class Part21 {
     public static void main(String[] args) {
         testFindGene();
     }
