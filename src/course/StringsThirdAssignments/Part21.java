@@ -1,8 +1,10 @@
 package course.StringsThirdAssignments;
 
+import edu.duke.*;
+
 public class Part21 {
     public static void main(String[] args) {
-        testFindGene();
+        testGetAllGenes();
     }
 
     private static int findStopCodon(String dna, int startIndex, String stopCodon) {
@@ -46,6 +48,23 @@ public class Part21 {
         }
     }
 
+    private static StorageResource getAllGenes(String dna) {
+        int startIndex = 0;
+        StorageResource resource = new StorageResource();
+
+        while (true) {
+            String currGene = findGene(dna.substring(startIndex));
+
+            if (currGene.equals("")) break;
+
+            resource.add(currGene);
+
+            startIndex = dna.indexOf(currGene, startIndex) + currGene.length();
+        }
+
+        return resource;
+    }
+
     private static void testFindStopCodon() {
         int test1 = findStopCodon("ATGTAA", 3, "TAA");
         System.out.println(test1);
@@ -66,5 +85,10 @@ public class Part21 {
 
     private static void testPrintAllGenes() {
         printAllGenes("ATGTGAAAATTTAAATGTAGATGTTTTAATAGTAATAGATGTTTTGATAATAGTAGATGTTTTTTTTTAAATGTGA");
+    }
+
+    private static void testGetAllGenes() {
+        StorageResource data = getAllGenes("ATGTGAAAATTTAAATGTAGATGTTTTAATAGTAATAGATGTTTTGATAATAGTAGATGTTTTTTTTTAAATGTGA");
+        System.out.println(data.data());
     }
 }
