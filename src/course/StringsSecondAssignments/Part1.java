@@ -2,7 +2,7 @@ package course.StringsSecondAssignments;
 
 public class Part1 {
     public static void main(String[] args) {
-        testPrintAllGenes();
+        testFindGene();
     }
 
     private static int findStopCodon(String dna, int startIndex, String stopCodon) {
@@ -60,16 +60,8 @@ public class Part1 {
     }
 
     private static void testFindGene() {
-        String test1 = findGene("ATTTAA");
+        String test1 = findGene("AATGCTAACTAGCTGACTAAT");
         System.out.println(test1);
-        String test2 = findGene("ATGTAG");
-        System.out.println(test2);
-        String test3 = findGene("ATGTTTTAGAATAG");
-        System.out.println(test3);
-        String test4 = findGene("ATGTTAATAG");
-        System.out.println(test4);
-        String test5 = findGene("TAATAGATGTTTTGATAATAG");
-        System.out.println(test5);
     }
 
     private static void testPrintAllGenes() {
