@@ -4,7 +4,7 @@ import edu.duke.*;
 
 public class Part21 {
     public static void main(String[] args) {
-        testCGRatio();
+        testProcessGenes();
     }
 
     private static int findStopCodon(String dna, int startIndex, String stopCodon) {
@@ -121,5 +121,48 @@ public class Part21 {
         }
 
         return countCTG;
+    }
+
+    private static void processGenes(StorageResource sr) {
+        int longerThan9StringsCount = 0;
+        int cdRatioHigherThan35 = 0;
+        int longestGeneLength = 0;
+
+        for (String str : sr.data()) {
+            int length = str.length();
+
+            if (length > 9) {
+                System.out.println(str);
+                longerThan9StringsCount++;
+            }
+
+            if (cgRatio(str) > 0.35) {
+                System.out.println(str);
+                cdRatioHigherThan35++;
+            }
+
+            if (length > longestGeneLength) {
+                longestGeneLength = length;
+            }
+        }
+
+        System.out.println(longerThan9StringsCount);
+        System.out.println(cdRatioHigherThan35);
+        System.out.println(longestGeneLength);
+    }
+
+    private static void testProcessGenes() {
+        StorageResource sr1 = new StorageResource();
+        sr1.add("ATGTTTTTTTAA"); // Longer than 9
+        processGenes(sr1);
+        StorageResource sr2 = new StorageResource();
+        sr2.add("ATGTAA"); // Smaller than 9
+        processGenes(sr2);
+        StorageResource sr3 = new StorageResource();
+        sr3.add("ATGGGGGGGTAA"); // Higher CG ratio
+        processGenes(sr3);
+        StorageResource sr4 = new StorageResource();
+        sr4.add("ATGTTTTAA"); // Lower CG ratio
+        processGenes(sr4);
     }
 }
