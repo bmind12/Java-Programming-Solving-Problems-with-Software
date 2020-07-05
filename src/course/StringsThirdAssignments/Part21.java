@@ -20,10 +20,10 @@ public class Part21 {
     }
 
     private static String findGene(String dna) {
-        int startIndex = dna.indexOf("ATG");
-        int taaIndex = findStopCodon(dna, startIndex + 3, "TAA");
-        int tagIndex = findStopCodon(dna, startIndex + 3, "TAG");
-        int tgaIndex = findStopCodon(dna, startIndex + 3, "TGA");
+        int startIndex = dna.toLowerCase().indexOf("atg");
+        int taaIndex = findStopCodon(dna.toLowerCase(), startIndex + 3, "taa");
+        int tagIndex = findStopCodon(dna.toLowerCase(), startIndex + 3, "tag");
+        int tgaIndex = findStopCodon(dna.toLowerCase(), startIndex + 3, "tga");
         int minIndex = taaIndex;
 
         if (minIndex == -1 || (minIndex > tagIndex && tagIndex != -1)) minIndex = tagIndex;
@@ -88,8 +88,11 @@ public class Part21 {
     }
 
     private static void testGetAllGenes() {
-        StorageResource data = getAllGenes("ATGTGAAAATTTAAATGTAGATGTTTTAATAGTAATAGATGTTTTGATAATAGTAGATGTTTTTTTTTAAATGTGA");
-        System.out.println(data.data());
+        FileResource fr = new FileResource("./assets/02-03-dna/GRch38dnapart.fa");
+        String dna = fr.asString();
+
+        StorageResource data = getAllGenes(dna);
+        System.out.println(data.size());
     }
 
     private static void testCGRatio() {
@@ -98,13 +101,13 @@ public class Part21 {
     }
 
     private static float cgRatio(String dna) {
-        float cgCount = 0;
+        int cgCount = 0;
 
         for (char c : dna.toLowerCase().toCharArray()) {
             if (c == 'c' || c == 'g') cgCount++;
         }
 
-        return cgCount / dna.length();
+        return ((float) cgCount) / dna.length();
     }
 
     private static int countCTG(String dna) {
@@ -112,7 +115,7 @@ public class Part21 {
         int currIndex = 0;
 
         while (true) {
-            currIndex = dna.indexOf("CTG", currIndex);
+            currIndex = dna.toLowerCase().indexOf("ctg", currIndex);
 
             if (currIndex == -1) break;
 
@@ -131,7 +134,7 @@ public class Part21 {
 
         for (String str : sr.data()) {
             int length = str.length();
-
+            System.out.println(str);
             if (length > threshold) {
                 System.out.println(str);
                 longerThanThresholdStringsCount++;
@@ -147,16 +150,17 @@ public class Part21 {
             }
         }
 
-        System.out.println(longerThanThresholdStringsCount);
-        System.out.println(cdRatioHigherThan35);
-        System.out.println(longestGeneLength);
+        System.out.println("longerThanThresholdStringsCount: " + longerThanThresholdStringsCount);
+        System.out.println("cdRatioHigherThan35: " + cdRatioHigherThan35);
+        System.out.println("longestGeneLength: " + longestGeneLength);
     }
 
     private static void testProcessGenes() {
-        FileResource fr = new FileResource("./assets/02-03-dna/brca1line.fa");
+        FileResource fr = new FileResource("./assets/02-03-dna/GRch38dnapart.fa");
         String dna = fr.asString();
         StorageResource sr1 = new StorageResource();
         sr1.add(dna); // Longer than 9
-        processGenes(sr1);
+        processGenes(getAllGenes(dna));
+//        System.out.println("countCTG(sr1.toString()): " + countCTG(dna));
     }
 }
