@@ -20,9 +20,12 @@ public class Part1 {
         parser = fr.getCSVParser(); // reset
         listExportersTwoProducts(parser, "gold", "diamonds"); // Namibia, South Africa
 
-        parser = fr.getCSVParser(); // reset
+        parser = fr.getCSVParser();
         int test2 = numberOfExporters(parser, "gold");
         System.out.println(test2); // 3
+
+        parser = fr.getCSVParser();
+        bigExporters(parser, "$999,999,999");
     }
 
     private static String countryInfo(CSVParser parser, String country) {
@@ -58,5 +61,14 @@ public class Part1 {
         }
 
         return count;
+    }
+
+    private static void bigExporters(CSVParser parser, String amount) { // $400,000,000
+        for (CSVRecord record : parser) {
+            String exportValue = record.get("Value (dollars)");
+            if (exportValue.length() > amount.length()) {
+                System.out.println(record.get("Country") + " " + exportValue);
+            }
+        }
     }
 }
