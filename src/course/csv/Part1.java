@@ -17,13 +17,12 @@ public class Part1 {
         String test1 = countryInfo(parser,"Germany"); // Germany: motor vehicles, machinery, chemicals: $1,547,000,000,000
         System.out.println(test1);
 
-//        parser = fr.getCSVParser(); // reset
+        parser = fr.getCSVParser(); // reset
+        listExportersTwoProducts(parser, "gold", "diamonds");
     }
 
     private static String countryInfo(CSVParser parser, String country) {
         for (CSVRecord record : parser) {
-            System.out.println(record);
-
             if (record.get("Country").contains(country)) {
                 String exports = record.get("Exports");
                 String exportValue = record.get("Value (dollars)");
@@ -33,5 +32,14 @@ public class Part1 {
         }
 
         return "NOT FOUND";
+    }
+
+    private static void listExportersTwoProducts(CSVParser parser, String exportItem1, String exportItem2) {
+        for (CSVRecord record : parser) {
+            String exports = record.get("Exports");
+            if (exports.contains(exportItem1) && exports.contains(exportItem2)) {
+                System.out.println(record.get("Country"));
+            }
+        }
     }
 }
