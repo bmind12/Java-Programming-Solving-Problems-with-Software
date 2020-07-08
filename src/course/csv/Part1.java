@@ -14,11 +14,15 @@ public class Part1 {
         FileResource fr = new FileResource();
         CSVParser parser = fr.getCSVParser();
 
-        String test1 = countryInfo(parser,"Germany"); // Germany: motor vehicles, machinery, chemicals: $1,547,000,000,000
-        System.out.println(test1);
+        String test1 = countryInfo(parser,"Germany");
+        System.out.println(test1); // Germany: motor vehicles, machinery, chemicals: $1,547,000,000,000
 
         parser = fr.getCSVParser(); // reset
-        listExportersTwoProducts(parser, "gold", "diamonds");
+        listExportersTwoProducts(parser, "gold", "diamonds"); // Namibia, South Africa
+
+        parser = fr.getCSVParser(); // reset
+        int test2 = numberOfExporters(parser, "gold");
+        System.out.println(test2); // 3
     }
 
     private static String countryInfo(CSVParser parser, String country) {
@@ -41,5 +45,18 @@ public class Part1 {
                 System.out.println(record.get("Country"));
             }
         }
+    }
+
+    private static int numberOfExporters(CSVParser parser, String exportItem) {
+        int count = 0;
+
+        for (CSVRecord record : parser) {
+            String exports = record.get("Exports");
+            if (exports.contains(exportItem)) {
+                count++;
+            }
+        }
+
+        return count;
     }
 }
