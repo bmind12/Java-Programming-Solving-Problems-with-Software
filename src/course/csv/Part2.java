@@ -10,7 +10,7 @@ public class Part2 {
     static private int ERROR_TEMP = -9999;
 
     public static void main(String[] args) {
-        testAverageTemperatureWithHighHumidityInFile();
+        testLowestHumidityInManyFiles();
     }
 
     private static CSVRecord coldestHourInFile(CSVParser parser) {
@@ -73,7 +73,7 @@ public class Part2 {
 
             String currentHumidityStr = record.get("Humidity");
 
-            if (currentHumidityStr == "N/A") continue;
+            if (currentHumidityStr.equals("N/A")) continue;
 
             int lowestHumidity = Integer.parseInt(lowestHumidityRecord.get("Humidity"));
             int currentHumidity = Integer.parseInt(currentHumidityStr);
@@ -139,7 +139,7 @@ public class Part2 {
         for (CSVRecord record : parser) {
             String currentHumidityStr = record.get("Humidity");
 
-            if (currentHumidityStr == "N/A") continue;
+            if (currentHumidityStr.equals("N/A")) continue;
 
             int humidity = Integer.parseInt(currentHumidityStr);
 
