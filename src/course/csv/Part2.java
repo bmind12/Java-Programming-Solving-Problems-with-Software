@@ -10,7 +10,7 @@ public class Part2 {
     static private int ERROR_TEMP = -9999;
 
     public static void main(String[] args) {
-        testLowestHumidityInFile();
+        testLowestHumidityInManyFiles();
     }
 
     private static CSVRecord coldestHourInFile(CSVParser parser) {
@@ -75,7 +75,6 @@ public class Part2 {
             int currentHumidity = Integer.parseInt(record.get("Humidity"));
 
             if (lowestHumidity > currentHumidity) {
-                lowestHumidity = currentHumidity;
                 lowestHumidityRecord = record;
             }
         }
@@ -83,9 +82,34 @@ public class Part2 {
         return lowestHumidityRecord;
     }
 
-//    If there is a tie, then return the first such record that was found.
-//
-//    not “N/A” before converting it to a number
+    private static void lowestHumidityInManyFiles() {
+        CSVRecord lowestHumidityRecord = null;
+
+        DirectoryResource dr = new DirectoryResource();
+
+        for (File file : dr.selectedFiles()) {
+            FileResource fr = new FileResource(file);
+            CSVParser parser = fr.getCSVParser();
+            CSVRecord record = lowestHumidityInFile(parser);
+
+            if (lowestHumidityRecord == null) {
+                lowestHumidityRecord = record;
+                continue;
+            }
+
+            int lowestHumidity = Integer.parseInt(lowestHumidityRecord.get("Humidity"));
+            int currentHumidity = Integer.parseInt(record.get("Humidity"));
+
+            if (lowestHumidity > currentHumidity) {
+                lowestHumidityRecord = record;
+            }
+        }
+
+        String humidity = lowestHumidityRecord.get("Humidity");
+        String date = lowestHumidityRecord.get("DateUTC");
+
+        System.out.println("Lowest Humidity was " + humidity + " at " + date);
+    }
 
     private static void testColdestHourInFile() {
         FileResource fr = new FileResource();
@@ -109,6 +133,10 @@ public class Part2 {
         CSVParser parser = fr.getCSVParser();
         CSVRecord csv = lowestHumidityInFile(parser);
         System.out.println(csv.get("DateUTC"));
+    }
+
+    private static void testLowestHumidityInManyFiles() {
+        lowestHumidityInManyFiles(); // Lowest Humidity was 24 at 2014-01-20 19:51:00 for January 19, 2014 and January 20, 2014
     }
 }
 
