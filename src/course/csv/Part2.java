@@ -10,7 +10,7 @@ public class Part2 {
     static private int ERROR_TEMP = -9999;
 
     public static void main(String[] args) {
-        testAverageTemperatureInFile();
+        testAverageTemperatureWithHighHumidityInFile();
     }
 
     private static CSVRecord coldestHourInFile(CSVParser parser) {
@@ -132,13 +132,28 @@ public class Part2 {
         return temperatureSum / countOfRecords;
     }
 
-    private static void testColdestHourInFile() {
-        FileResource fr = new FileResource();
-        CSVParser parser = fr.getCSVParser();
+    private static double averageTemperatureWithHighHumidityInFile(CSVParser parser, int value) {
+        double temperatureSum = 0;
+        int countOfRecords = 0;
 
-        CSVRecord record = coldestHourInFile(parser);
-        System.out.println();
-        System.out.println(record.get("TemperatureF") + " on " + record.get("DateUTC"));
+        for (CSVRecord record : parser) {
+            String currentHumidityStr = record.get("Humidity");
+
+            if (currentHumidityStr == "N/A") continue;
+
+            int humidity = Integer.parseInt(currentHumidityStr);
+
+            if (humidity < value) continue;
+
+            double temp = Double.parseDouble(record.get("TemperatureF"));
+
+            if (temp != ERROR_TEMP) {
+                temperatureSum += temp;
+                countOfRecords++;
+            }
+        }
+
+        return temperatureSum / countOfRecords;
     }
 
     private static void testFileWithColdestTemperature() {
@@ -167,5 +182,27 @@ public class Part2 {
         double test1 = averageTemperatureInFile(parser);
 
         System.out.println("Average temperature in file is " + test1);
+    }
+
+
+    private static void testColdestHourInFile() {
+        FileResource fr = new FileResource();
+        CSVParser parser = fr.getCSVParser();
+
+        CSVRecord record = coldestHourInFile(parser);
+        System.out.println(record.get("TemperatureF") + " on " + record.get("DateUTC"));
+    }
+
+    private static void testAverageTemperatureWithHighHumidityInFile() {
+        FileResource fr = new FileResource();
+        CSVParser parser = fr.getCSVParser();
+
+        double test = averageTemperatureWithHighHumidityInFile(parser, 80);
+
+        if (new Double(test).isNaN()) {
+            System.out.println("No temperatures with that humidity");
+        } else {
+            System.out.println("Average Temp when high Humidity is " + test);
+        }
     }
 }
