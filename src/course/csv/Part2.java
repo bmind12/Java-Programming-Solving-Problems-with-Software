@@ -10,7 +10,7 @@ public class Part2 {
     static private int ERROR_TEMP = -9999;
 
     public static void main(String[] args) {
-        testLowestHumidityInManyFiles();
+        testAverageTemperatureInFile();
     }
 
     private static CSVRecord coldestHourInFile(CSVParser parser) {
@@ -71,8 +71,13 @@ public class Part2 {
                 continue;
             }
 
+            String currentHumidityStr = record.get("Humidity");
+
+            if (currentHumidityStr == "N/A") continue;
+
             int lowestHumidity = Integer.parseInt(lowestHumidityRecord.get("Humidity"));
-            int currentHumidity = Integer.parseInt(record.get("Humidity"));
+            int currentHumidity = Integer.parseInt(currentHumidityStr);
+
 
             if (lowestHumidity > currentHumidity) {
                 lowestHumidityRecord = record;
@@ -111,6 +116,22 @@ public class Part2 {
         System.out.println("Lowest Humidity was " + humidity + " at " + date);
     }
 
+    private static double averageTemperatureInFile(CSVParser parser) {
+        double temperatureSum = 0;
+        int countOfRecords = 0;
+
+        for (CSVRecord record : parser) {
+            double temp = Double.parseDouble(record.get("TemperatureF"));
+
+            if (temp != ERROR_TEMP) {
+                temperatureSum += temp;
+                countOfRecords++;
+            }
+        }
+
+        return temperatureSum / countOfRecords;
+    }
+
     private static void testColdestHourInFile() {
         FileResource fr = new FileResource();
         CSVParser parser = fr.getCSVParser();
@@ -136,7 +157,15 @@ public class Part2 {
     }
 
     private static void testLowestHumidityInManyFiles() {
-        lowestHumidityInManyFiles(); // Lowest Humidity was 24 at 2014-01-20 19:51:00 for January 19, 2014 and January 20, 2014
+        lowestHumidityInManyFiles();
+    }
+
+    private static void testAverageTemperatureInFile() {
+        FileResource fr = new FileResource();
+        CSVParser parser = fr.getCSVParser();
+
+        double test1 = averageTemperatureInFile(parser);
+
+        System.out.println("Average temperature in file is " + test1);
     }
 }
-
