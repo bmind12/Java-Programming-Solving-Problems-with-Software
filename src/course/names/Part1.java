@@ -9,24 +9,24 @@ import java.io.File;
 
 public class Part1 {
     public static void main(String[] args) {
-        FileResource fr = new FileResource("./assets/04-01-names/example-small.csv");
+        FileResource fr = new FileResource("/Users/personal/Downloads/us_babynames/us_babynames_by_year/yob1900.csv");
 
-        System.out.println(getTotalBirthsRankedHigher(2012, "Ethan", "M")); // 15
+        System.out.println(yearOfHighestRank("Mich", "M"));
     }
 
     private static void totalBirths(FileResource fr) {
         int girlNamesCount = 0;
         int boysNamesCount = 0;
 
-        CSVParser parser = fr.getCSVParser();
+        CSVParser parser = fr.getCSVParser(false);
 
         for (CSVRecord record : parser) {
             String gender = record.get(1);
-            int count = Integer.parseInt(record.get(2));
+
             if (gender.equals("F")) {
-                girlNamesCount += count;
+                girlNamesCount++;
             } else {
-                boysNamesCount += count;
+                boysNamesCount++;
             };
         }
 
@@ -36,8 +36,8 @@ public class Part1 {
     }
 
     private static int getRank(int year, String name, String gender) {
-        FileResource fr = new FileResource("./assets/04-01-names/yob" + year + "short.csv");
-        CSVParser parser = fr.getCSVParser();
+        FileResource fr = new FileResource("/Users/personal/Downloads/us_babynames/us_babynames_by_year/yob" + year + ".csv");
+        CSVParser parser = fr.getCSVParser(false);
         int rank = 1;
 
         for (CSVRecord record : parser) {
@@ -56,8 +56,8 @@ public class Part1 {
     }
 
     private static String getName(int year, int rank, String gender) {
-        FileResource fr = new FileResource("./assets/04-01-names/yob" + year + "short.csv");
-        CSVParser parser = fr.getCSVParser();
+        FileResource fr = new FileResource("/Users/personal/Downloads/us_babynames/us_babynames_by_year/yob" + year + ".csv");
+        CSVParser parser = fr.getCSVParser(false);
         int currentRank = 1;
 
         for (CSVRecord record : parser) {
@@ -85,14 +85,19 @@ public class Part1 {
     private static int yearOfHighestRank(String name, String gender) {
         DirectoryResource dr = new DirectoryResource();
         int highestRank = -1;
+        int yearOfHighestRank = -1;
 
         for (File file : dr.selectedFiles()) {
             int year = Integer.parseInt(file.getName().replaceAll("\\D+",""));
             int rank = getRank(year, name, gender);
-            if (rank < highestRank || highestRank == -1) highestRank = rank;
+            System.out.println("In year: " + year + " ranked at: " + rank);
+            if (rank < highestRank || highestRank == -1 && rank != -1) {
+                highestRank = rank;
+                yearOfHighestRank = year;
+            };
         }
 
-        return highestRank;
+        return yearOfHighestRank;
     }
 
     private static double getAverageRank(String name, String gender) {
@@ -115,8 +120,8 @@ public class Part1 {
     }
 
     private static int getTotalBirthsRankedHigher(int year, String name, String gender) {
-        FileResource fr = new FileResource("./assets/04-01-names/yob" + year + "short.csv");
-        CSVParser parser = fr.getCSVParser();
+        FileResource fr = new FileResource("/Users/personal/Downloads/us_babynames/us_babynames_by_year/yob" + year + ".csv");
+        CSVParser parser = fr.getCSVParser(false);
         int totalBirthsNumber = 0;
 
         for (CSVRecord record : parser) {

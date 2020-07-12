@@ -25,7 +25,142 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad3bb0de-1ca4-4e82-b6ef-cf1e1153c0d2" name="Default Changelist" comment="">
+    <list default="true" id="ad3bb0de-1ca4-4e82-b6ef-cf1e1153c0d2" name="Default Changelist" comment="implements getTotalBirthsRankedHigher method">
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1880.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1881.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1882.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1883.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1884.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1885.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1886.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1887.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1888.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1889.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1890.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1891.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1892.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1893.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1894.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1895.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1896.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1897.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1898.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1899.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1900.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1901.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1902.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1903.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1904.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1905.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1906.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1907.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1908.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1909.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1910.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1911.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1912.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1913.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1914.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1915.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1916.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1917.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1918.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1919.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1920.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1921.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1922.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1923.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1924.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1925.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1926.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1927.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1928.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1929.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1930.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1931.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1932.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1933.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1934.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1935.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1936.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1937.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1938.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1939.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1940.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1941.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1942.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1943.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1944.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1945.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1946.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1947.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1948.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1949.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1950.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1951.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1952.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1953.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1954.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1955.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1956.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1957.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1958.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1959.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1960.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1961.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1962.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1963.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1964.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1965.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1966.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1967.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1968.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1969.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1970.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1971.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1972.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1973.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1974.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1975.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1976.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1977.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1978.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1979.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1980.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1981.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1982.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1983.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1984.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1985.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1986.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1987.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1988.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1989.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1990.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1991.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1992.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1993.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1994.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1995.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1996.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1997.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1998.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob1999.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2000.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2001.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2002.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2003.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2004.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2005.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2006.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2007.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2008.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2009.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2010.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2011.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2012.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2013.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/us_babynames_by_year/yob2014.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/course/names/Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/course/names/Part1.java" afterDir="false" />
     </list>
@@ -65,18 +200,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/assets/04-01-names" />
       <recent name="$PROJECT_DIR$/assets/03-02-csv" />
       <recent name="$PROJECT_DIR$/assets/03-01-csv" />
       <recent name="$PROJECT_DIR$/assets/02-03-dnas" />
-      <recent name="$PROJECT_DIR$/assets/02-02-cs-articles-html" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Part1">
@@ -165,13 +304,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593352679624</updated>
-    </task>
-    <task id="LOCAL-00003" summary="implements getAverageLength method">
-      <created>1593365200464</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1593365200464</updated>
     </task>
     <task id="LOCAL-00004" summary="implements getLargestSide method">
       <created>1593395439195</created>
@@ -509,7 +641,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594525595077</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="implements getTotalBirthsRankedHigher method">
+      <created>1594525995788</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1594525995788</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,7 +676,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adds class &quot;Part21&quot; as another assignment" />
     <MESSAGE value="implements getAllGenes method" />
     <MESSAGE value="implements cgRatio method" />
     <MESSAGE value="implements countCTG method" />
@@ -562,7 +700,8 @@
     <MESSAGE value="implements whatIsNameInYear method" />
     <MESSAGE value="implements yearOfHighestRank method" />
     <MESSAGE value="implements getAverageRank method" />
-    <option name="LAST_COMMIT_MESSAGE" value="implements getAverageRank method" />
+    <MESSAGE value="implements getTotalBirthsRankedHigher method" />
+    <option name="LAST_COMMIT_MESSAGE" value="implements getTotalBirthsRankedHigher method" />
   </component>
   <component name="WindowStateProjectService">
     <state x="204" y="-1019" key="#Project_Structure" timestamp="1593363571008">
@@ -573,10 +712,10 @@
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="500" y="-699" width="454" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593828217828" />
-    <state x="170" y="-891" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1594525594966">
+    <state x="170" y="-891" width="1271" height="891" key="CommitChangelistDialog2" timestamp="1594527461359">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="170" y="-891" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525594966" />
+    <state x="170" y="-891" width="1271" height="891" key="CommitChangelistDialog2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594527461359" />
     <state x="65" y="51" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1593397618942" />
     <state x="170" y="-874" key="CommitChangelistDialog2/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594099222184" />
     <state width="962" height="442" key="Diff.GoToChangePopup" timestamp="1593364706274">
@@ -587,64 +726,64 @@
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="-144" y="-1100" width="1720" height="1000" key="DiffContextDialog/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593364747531" />
-    <state width="912" height="441" key="GridCell.Tab.0.bottom" timestamp="1594525562168">
+    <state width="1878" height="441" key="GridCell.Tab.0.bottom" timestamp="1594529406858">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state width="912" height="441" key="GridCell.Tab.0.bottom/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525562168" />
+    <state width="1878" height="441" key="GridCell.Tab.0.bottom/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594529406858" />
     <state width="1398" height="250" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593399195059" />
-    <state width="1878" height="441" key="GridCell.Tab.0.bottom/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594453855859" />
+    <state width="1878" height="441" key="GridCell.Tab.0.bottom/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594529011800" />
     <state width="1878" height="424" key="GridCell.Tab.0.bottom/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764028" />
-    <state width="912" height="441" key="GridCell.Tab.0.center" timestamp="1594525562166">
+    <state width="1878" height="441" key="GridCell.Tab.0.center" timestamp="1594529406857">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state width="912" height="441" key="GridCell.Tab.0.center/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525562166" />
+    <state width="1878" height="441" key="GridCell.Tab.0.center/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594529406857" />
     <state width="1398" height="250" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593399195058" />
-    <state width="1878" height="441" key="GridCell.Tab.0.center/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594453855857" />
+    <state width="1878" height="441" key="GridCell.Tab.0.center/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594529011799" />
     <state width="1878" height="424" key="GridCell.Tab.0.center/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764026" />
-    <state width="912" height="441" key="GridCell.Tab.0.left" timestamp="1594525562166">
+    <state width="1878" height="441" key="GridCell.Tab.0.left" timestamp="1594529406856">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state width="912" height="441" key="GridCell.Tab.0.left/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525562166" />
+    <state width="1878" height="441" key="GridCell.Tab.0.left/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594529406856" />
     <state width="1398" height="250" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593399195057" />
-    <state width="1878" height="441" key="GridCell.Tab.0.left/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594453855856" />
+    <state width="1878" height="441" key="GridCell.Tab.0.left/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594529011799" />
     <state width="1878" height="424" key="GridCell.Tab.0.left/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764024" />
-    <state width="912" height="441" key="GridCell.Tab.0.right" timestamp="1594525562167">
+    <state width="1878" height="441" key="GridCell.Tab.0.right" timestamp="1594529406858">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state width="912" height="441" key="GridCell.Tab.0.right/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525562167" />
+    <state width="1878" height="441" key="GridCell.Tab.0.right/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594529406858" />
     <state width="1398" height="250" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593399195058" />
-    <state width="1878" height="441" key="GridCell.Tab.0.right/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594453855858" />
+    <state width="1878" height="441" key="GridCell.Tab.0.right/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594529011799" />
     <state width="1878" height="424" key="GridCell.Tab.0.right/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764027" />
-    <state width="912" height="441" key="GridCell.Tab.1.bottom" timestamp="1594525562074">
+    <state width="1878" height="441" key="GridCell.Tab.1.bottom" timestamp="1594529406771">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state width="912" height="441" key="GridCell.Tab.1.bottom/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525562074" />
+    <state width="1878" height="441" key="GridCell.Tab.1.bottom/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594529406771" />
     <state width="1398" height="250" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593399194675" />
-    <state width="1878" height="441" key="GridCell.Tab.1.bottom/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594453855774" />
+    <state width="1878" height="441" key="GridCell.Tab.1.bottom/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594529011739" />
     <state width="1878" height="441" key="GridCell.Tab.1.bottom/0.23.1440.813/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594365157939" />
     <state width="1878" height="424" key="GridCell.Tab.1.bottom/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764032" />
-    <state width="912" height="441" key="GridCell.Tab.1.center" timestamp="1594525562073">
+    <state width="1878" height="441" key="GridCell.Tab.1.center" timestamp="1594529406770">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state width="912" height="441" key="GridCell.Tab.1.center/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525562073" />
+    <state width="1878" height="441" key="GridCell.Tab.1.center/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594529406770" />
     <state width="1398" height="250" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1593399194674" />
-    <state width="1878" height="441" key="GridCell.Tab.1.center/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594453855771" />
+    <state width="1878" height="441" key="GridCell.Tab.1.center/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594529011739" />
     <state width="1878" height="441" key="GridCell.Tab.1.center/0.23.1440.813/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594365157933" />
     <state width="1878" height="424" key="GridCell.Tab.1.center/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764030" />
-    <state width="912" height="441" key="GridCell.Tab.1.left" timestamp="1594525562072">
+    <state width="1878" height="441" key="GridCell.Tab.1.left" timestamp="1594529406769">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state width="912" height="441" key="GridCell.Tab.1.left/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525562072" />
+    <state width="1878" height="441" key="GridCell.Tab.1.left/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594529406769" />
     <state width="1398" height="250" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1593399194674" />
-    <state width="1878" height="441" key="GridCell.Tab.1.left/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594453855770" />
+    <state width="1878" height="441" key="GridCell.Tab.1.left/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594529011738" />
     <state width="1878" height="441" key="GridCell.Tab.1.left/0.23.1440.813/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594365157933" />
     <state width="1878" height="424" key="GridCell.Tab.1.left/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764029" />
-    <state width="912" height="441" key="GridCell.Tab.1.right" timestamp="1594525562073">
+    <state width="1878" height="441" key="GridCell.Tab.1.right" timestamp="1594529406770">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state width="912" height="441" key="GridCell.Tab.1.right/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525562073" />
+    <state width="1878" height="441" key="GridCell.Tab.1.right/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594529406770" />
     <state width="1398" height="250" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1593399194675" />
-    <state width="1878" height="441" key="GridCell.Tab.1.right/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594453855773" />
+    <state width="1878" height="441" key="GridCell.Tab.1.right/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594529011739" />
     <state width="1878" height="441" key="GridCell.Tab.1.right/0.23.1440.813/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594365157938" />
     <state width="1878" height="424" key="GridCell.Tab.1.right/0.23.1440.877/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593363764030" />
     <state x="197" y="-891" key="RollbackChangesDialog" timestamp="1594276376887">
@@ -664,10 +803,10 @@
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
     <state x="569" y="-679" key="VCS.ChangelistChooser/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1593365174393" />
-    <state x="316" y="-860" key="Vcs.Push.Dialog.v2" timestamp="1594525597871">
+    <state x="316" y="-860" key="Vcs.Push.Dialog.v2" timestamp="1594527459557">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="316" y="-860" key="Vcs.Push.Dialog.v2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525597871" />
+    <state x="316" y="-860" key="Vcs.Push.Dialog.v2/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594527459557" />
     <state x="420" y="255" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1593396516073" />
     <state x="316" y="-844" key="Vcs.Push.Dialog.v2/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594099227197" />
     <state x="439" y="-701" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1593757706355">
@@ -688,10 +827,10 @@
     </state>
     <state x="381" y="-314" key="run.anything.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594453385791" />
     <state x="381" y="-314" key="run.anything.popup/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594097757010" />
-    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup" timestamp="1594525018303">
+    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup" timestamp="1594525989249">
       <screen x="-244" y="-1200" width="1920" height="1200" />
     </state>
-    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525018303" />
+    <state x="381" y="-929" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-244.-1200.1920.1200@-244.-1200.1920.1200" timestamp="1594525989249" />
     <state x="469" y="203" width="670" height="507" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1593397601108" />
     <state x="381" y="-911" width="670" height="664" key="search.everywhere.popup/0.23.1440.813/-244.-1177.1920.1177@-244.-1177.1920.1177" timestamp="1594099175862" />
   </component>
