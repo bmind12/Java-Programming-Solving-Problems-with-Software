@@ -8,10 +8,7 @@ public class Part1 {
     public static void main(String[] args) {
         FileResource fr = new FileResource("./assets/04-01-names/example-small.csv");
 
-        int rank1 = getRank(2012,"Mason", "M"); // 2
-        int rank2 = getRank(2012,"Mason", "F"); // -1
-        System.out.println(rank1);
-        System.out.println(rank2);
+        whatIsNameInYear("Olivia", 2013, 2014, "F");
     }
 
     private static void totalBirths(FileResource fr) {
@@ -74,4 +71,11 @@ public class Part1 {
 
         return "NO NAME";
     };
+
+    private static void whatIsNameInYear(String name, int year, int newYear, String gender) {
+        int rank = getRank(year, name, gender);
+        String newName = getName(newYear, rank, gender);
+
+        System.out.println(name + " born in " + year + " would be " + newName + " if she was born in " + newYear + ".");
+    }
 }
