@@ -11,7 +11,8 @@ public class Part1 {
     public static void main(String[] args) {
         FileResource fr = new FileResource("./assets/04-01-names/example-small.csv");
 
-        System.out.println(yearOfHighestRank("Mason", "M")); // 2012
+        System.out.println(getAverageRank("Mason", "M")); // 3.0
+        System.out.println(getAverageRank("Jacob", "M")); // 2.66
     }
 
     private static void totalBirths(FileResource fr) {
@@ -93,5 +94,24 @@ public class Part1 {
         }
 
         return highestRank;
+    }
+
+    private static double getAverageRank(String name, String gender) {
+        DirectoryResource dr = new DirectoryResource();
+        double rankSum = 0;
+        double occurances = 0;
+
+        for (File file : dr.selectedFiles()) {
+            int year = Integer.parseInt(file.getName().replaceAll("\\D+",""));
+            int rank = getRank(year, name, gender);
+            if (rank != -1) {
+                rankSum += rank;
+                occurances++;
+            };
+        }
+
+        if (rankSum != 0) return rankSum / occurances;
+
+        return -1;
     }
 }
