@@ -10,7 +10,7 @@ public class Part2 {
     static private int ERROR_TEMP = -9999;
 
     public static void main(String[] args) {
-        testLowestHumidityInManyFiles();
+        testFileWithColdestTemperature();
     }
 
     private static CSVRecord coldestHourInFile(CSVParser parser) {
@@ -53,7 +53,7 @@ public class Part2 {
             double lowestTemp = Double.parseDouble(lowestTempRecord.get("TemperatureF"));
             double temp = Double.parseDouble(record.get("TemperatureF"));
 
-            if (temp < lowestTemp) {
+            if (temp < lowestTemp && temp != -9999) {
                 coldestTempFileName = file.getName();
                 lowestTempRecord = record;
             }
@@ -158,7 +158,7 @@ public class Part2 {
 
     private static void testFileWithColdestTemperature() {
         String test1 = fileWithColdestTemperature();
-        FileResource fr = new FileResource("./assets/03-02-csv/nc_weather/2014/" + test1);
+        FileResource fr = new FileResource("./assets/03-02-csv/nc_weather/2013/" + test1);
         for (CSVRecord record : fr.getCSVParser()) {
             System.out.println(record.get("DateUTC") + ": " + record.get("TemperatureF"));
         }
@@ -168,7 +168,7 @@ public class Part2 {
         FileResource fr = new FileResource();
         CSVParser parser = fr.getCSVParser();
         CSVRecord csv = lowestHumidityInFile(parser);
-        System.out.println(csv.get("DateUTC"));
+        System.out.println("Lowest humidity was " + csv.get("Humidity") + " at " + csv.get("DateUTC"));
     }
 
     private static void testLowestHumidityInManyFiles() {
@@ -176,7 +176,7 @@ public class Part2 {
     }
 
     private static void testAverageTemperatureInFile() {
-        FileResource fr = new FileResource();
+        FileResource fr = new FileResource("./assets/03-02-csv/nc_weather/2013/weather-2013-08-10.csv");
         CSVParser parser = fr.getCSVParser();
 
         double test1 = averageTemperatureInFile(parser);
@@ -194,7 +194,7 @@ public class Part2 {
     }
 
     private static void testAverageTemperatureWithHighHumidityInFile() {
-        FileResource fr = new FileResource();
+        FileResource fr = new FileResource("./assets/03-02-csv/nc_weather/2013/weather-2013-09-02.csv");
         CSVParser parser = fr.getCSVParser();
 
         double test = averageTemperatureWithHighHumidityInFile(parser, 80);
