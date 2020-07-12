@@ -11,21 +11,21 @@ public class Part1 {
     }
 
     private static void tester() {
-        FileResource fr = new FileResource();
+        FileResource fr = new FileResource("./assets/03-01-csv/exportdata.csv");
         CSVParser parser = fr.getCSVParser();
 
-        String test1 = countryInfo(parser,"Germany");
-        System.out.println(test1); // Germany: motor vehicles, machinery, chemicals: $1,547,000,000,000
+//        String test1 = countryInfo(parser,"Germany");
+//        System.out.println(test1); // Germany: motor vehicles, machinery, chemicals: $1,547,000,000,000
 
-        parser = fr.getCSVParser(); // reset
-        listExportersTwoProducts(parser, "gold", "diamonds"); // Namibia, South Africa
+//        parser = fr.getCSVParser(); // reset
+//        listExportersTwoProducts(parser, "cotton", "flowers"); // Namibia, South Africa
+
+//        parser = fr.getCSVParser();
+//        int test2 = numberOfExporters(parser, "cocoa");
+//        System.out.println(test2); // 3
 
         parser = fr.getCSVParser();
-        int test2 = numberOfExporters(parser, "gold");
-        System.out.println(test2); // 3
-
-        parser = fr.getCSVParser();
-        bigExporters(parser, "$999,999,999");
+        bigExporters(parser, "$999,999,999,999");
     }
 
     private static String countryInfo(CSVParser parser, String country) {
