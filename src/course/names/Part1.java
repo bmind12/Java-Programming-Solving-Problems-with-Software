@@ -1,14 +1,17 @@
 package course.names;
 
+import edu.duke.DirectoryResource;
 import edu.duke.FileResource;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
+
+import java.io.File;
 
 public class Part1 {
     public static void main(String[] args) {
         FileResource fr = new FileResource("./assets/04-01-names/example-small.csv");
 
-        whatIsNameInYear("Olivia", 2013, 2014, "F");
+        System.out.println(yearOfHighestRank("Mason", "M")); // 2012
     }
 
     private static void totalBirths(FileResource fr) {
@@ -77,5 +80,18 @@ public class Part1 {
         String newName = getName(newYear, rank, gender);
 
         System.out.println(name + " born in " + year + " would be " + newName + " if she was born in " + newYear + ".");
+    }
+
+    private static int yearOfHighestRank(String name, String gender) {
+        DirectoryResource dr = new DirectoryResource();
+        int highestRank = -1;
+
+        for (File file : dr.selectedFiles()) {
+            int year = Integer.parseInt(file.getName().replaceAll("\\D+",""));
+            int rank = getRank(year, name, gender);
+            if (rank < highestRank || highestRank == -1) highestRank = rank;
+        }
+
+        return highestRank;
     }
 }
