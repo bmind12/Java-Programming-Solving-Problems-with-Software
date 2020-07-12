@@ -54,4 +54,24 @@ public class Part1 {
 
         return -1;
     }
+
+    private static String getName(int year, int rank, String gender) {
+        FileResource fr = new FileResource("./assets/04-01-names/yob" + year + "short.csv");
+        CSVParser parser = fr.getCSVParser();
+        int currentRank = 1;
+
+        for (CSVRecord record : parser) {
+            String nameRecord = record.get(0);
+            String genderRecord = record.get(1);
+
+            if (genderRecord.equals(gender)) {
+                if (currentRank == rank) return nameRecord;
+
+                currentRank++;
+            };
+
+        }
+
+        return "NO NAME";
+    };
 }
